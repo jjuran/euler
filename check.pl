@@ -5,6 +5,7 @@ use strict;
 
 my %answers =
 (
+	1 => 233168,
 );
 
 my $n_fails = 0;
