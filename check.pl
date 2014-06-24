@@ -6,6 +6,7 @@ use strict;
 my %answers =
 (
 	1 => 233168,
+	2 => 4613732,
 );
 
 my $n_fails = 0;
