@@ -45,8 +45,6 @@ sub merge_maps
 {
 	my %result;
 	
-	die "undef" if grep { !defined } values %result;
-	
 	foreach my $map ( @_ )
 	{
 		my %map = %$map;
@@ -59,8 +57,6 @@ sub merge_maps
 			}
 		}
 	}
-	
-	die "undef" if grep { !defined } values %result;
 	
 	return \%result;
 }
