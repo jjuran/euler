@@ -1,25 +1,10 @@
 #!/usr/bin/env python
 
-primes = [ 2 ]
+import sys
 
-def next_prime():
-	global primes
-	x = primes[ -1 ]
-	while True:
-		x += 1
-		for prime in primes:
-			if x % prime == 0:
-				break
-		else:
-			primes += [ x ]
-			return x
+sys.path.append( "lib/python" )
 
-def nth_prime( i ):
-	if i < len( primes ):
-		return primes[ i ]
-	for _ in range( len( primes ), i + 1 ):
-		prime = next_prime()
-	return prime
+from prime import nth_prime
 
 product = 600851475143
 
