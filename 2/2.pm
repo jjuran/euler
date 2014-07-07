@@ -5,18 +5,6 @@ package Euler::2;
 use warnings;
 use strict;
 
-sub sum
-{
-	my $sum = 0;
-	
-	while ( my $x = shift @_ )
-	{
-		$sum += $x;
-	}
-	
-	return $sum;
-}
-
 sub odd  { $_[0] % 2 }
 sub even { !odd $_[0] }
 
