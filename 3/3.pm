@@ -55,11 +55,11 @@ sub answer
 	while ( $product > 1 )
 	{
 		my $factor = nth_prime( $i );
-	
+		
 		while ( $product % $factor == 0 )
 		{
 			$product /= $factor;
-		
+			
 			$max = $factor;
 		}
 		
