@@ -3,7 +3,7 @@ package Prime;
 use warnings;
 use strict;
 
-my @primes = ( 2 );
+my @primes = ( 2, 3 );
 
 sub next_prime
 {
@@ -11,7 +11,7 @@ sub next_prime
 	
 	NUMBER: while ( 1 )
 	{
-		++$x;
+		$x += 2;  # other than 2, primes are always odd
 		
 		foreach my $prime ( @primes )
 		{
