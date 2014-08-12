@@ -15,6 +15,8 @@ sub next_prime
 		
 		foreach my $prime ( @primes )
 		{
+			last  if $prime * $prime > $x;
+			
 			next NUMBER if $x % $prime == 0;
 		}
 		
